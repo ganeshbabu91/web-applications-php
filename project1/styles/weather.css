@@ -1,0 +1,79 @@
+*{
+   font-size: 18px !important;
+   line-height: 2;
+}
+body{
+  background: url('../images/background-world-map-1.gif');
+}
+#output{
+  margin: 0 auto;
+  width: 1000px;
+}
+#app-title {
+  transform: rotate(-90deg);
+  float: left;
+  position: relative;
+  right: 700px;
+  top: 450px;
+  font-size: 40px !important;
+  border: 5px dashed magenta;
+  padding: 20px;
+  color: violet;
+  background: #000;
+  border-radius: 47px;
+}
+.container{
+ margin-top: 50px;
+}
+.form-control {
+  width: 500px;
+  height: 60px;
+  margin-bottom: 15px;
+  font-size: 30px !important;
+  font-style: italic;
+  color: #337ab7;
+  border-radius: 16px;
+}
+.form-horizontal {
+ margin-bottom: 30px;
+ margin-left: 220px;
+ bottom: 130px;
+ position: relative;
+}
+#form-wrapper{
+ margin-left: 15px;
+}
+.btn {
+ margin-right: 15px;
+}
+#weather-panel{
+  bottom: 130px;
+  position: relative;
+}
+#weather-panel .bg-black{
+ background-color: #000;
+ background-image: none;
+}
+#weather-degree {
+  font-size: 30px !important;
+  position: relative;
+  float: right;
+}
+#weather-image {
+  padding-left: 40px;
+}
+#advice-msg{
+  margin: 30px;
+  text-align: center;
+}
+#morelink{
+  float: right;
+  text-decoration: underline;
+  font-style: italic;
+}
+.panel-body{
+  margin-left: 28px !important;
+}
+.panel{
+  background: none !important;
+}

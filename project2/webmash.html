@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<!-- 
+  Student Name: THAVASIMUTHU GANESHBABU 
+  Project Name: Project 2 (due on Wednesday October 26 before midnight)
+-->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display Address with Weather Details</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="webmash.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp1orL9p4rTGS1rjWx5eC7Frx__jy9-as&callback=initMap" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="container">
+      <!-- SECTION 1 : MAP AREA -->
+      <div id="map"></div>
+      <!-- SECTION 2 : TEXT DISPLAY AREA -->
+      <div id="output">
+        <h3>Weather History Log (Old to Most Recent)</h2>
+        <div id="message">Nothing to show. Click on a map to see address and weather details.</div>
+        <div id="weatherLog"></div>
+      </div>
+      <!-- SECTION 3 : CLEAR BUTTON -->
+      <div id="controls">
+        <button id="clear" onclick="clearLog();">Clear Log</button>
+      </div>  
+    </div>
+    <!-- Invisible element to hold the address of the clicked location -->
+    <div id="markerPopup"></div>
+  </body>
+</html>
+

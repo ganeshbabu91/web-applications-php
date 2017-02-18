@@ -1,0 +1,57 @@
+#container{
+  width: 100%;
+  padding: 20px;
+}
+#map{
+  width: 600px;
+  height: 500px;
+  float: left;
+  margin-right: 200px;
+}
+#markerPopup{
+  display: none;
+}
+table td{
+  padding: 10px;
+}
+#output{
+  width: 600px;
+  height: 700px;
+  display: inline-block;
+  overflow-y: scroll;
+  border: 2px dashed #aaa;
+  padding: 5px;
+}
+#output h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+}
+#message{
+  font-weight: italic;
+  text-align: center; 
+  color: red;
+}
+#controls {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  float: right;
+}
+button#clear {
+  font-size: 40px;
+  padding: 20px;
+  margin-top: 100px;
+  cursor: pointer;
+  color: #fff;
+  background: blue;
+  border-radius: 15px;
+}
+#clear:hover{
+  background: darkblue;
+}
+div#weatherLog {
+  color: darkblue;
+  font-size: 20px;
+  font-style: italic;
+}

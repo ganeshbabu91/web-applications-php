@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+  Student Name: THAVASIMUTHU GANESHBABU 
+  Project Name: Project 1 (due on Wednesday October 19 before midnight)
+-->
+<html lang="en">
+  <head>
+    <title>A Weather Web Application</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./styles/weather.css"/>
+    <script type="text/javascript" src="weather.js"></script>
+  </head>
+  <body onload="domReady();">
+    <div id="output">
+      <div id="app-title">Weather Application using Open Weather Map API</div>
+      <div class="container">
+        <form class="form-horizontal">
+          <div class="form-group" id="form-wrapper">
+               <div class="col-md-4">
+                     <input type="text" class="form-control" id="form-input" placeholder="Type city name (Eg., London)">
+               </div>
+          </div>
+          <div class="form-group">
+               <div class="col-md-4 col-md-offset-2">
+                     <button class="btn btn-default">Clear</button>
+                     <button class="btn btn-primary">Display Info</button>
+               </div>
+          </div>
+       </form>
+        <div id="weather-panel" class="col-xl-7 hide">
+          <div class="panel panel-primary" style="border:none;">
+            <div class="panel-heading">
+               <h3 class="panel-title">Current Weather Situation at <span id="city"></span> 
+               <a target="_blank" href="" id="morelink">More on weather.com</a>
+               </h3>
+            </div>
+            
+            <div id="advice-msg" class="alert">If you see this message, the applcation has encountered complicated weather information. We ask you to go through the details below and make decision accordingly.</div>
+
+            <div class="panel-body col-md-7">
+               <div class="panel panel-primary">
+                 <div class="panel-heading bg-black">
+                    <h3 class="panel-title">Detailed Weather Information</h3>
+                 </div>
+                 <div class="panel-body">
+                   <table id="weather-info" class="table table-hover">
+                      
+                   </table>
+                 </div>
+               </div>
+            </div>
+            <div class="panel-body col-md-4">
+                <div class="panel panel-primary">
+                 <div class="panel-heading bg-black">
+                    <h3 class="panel-title">Temperature</h3>
+                 </div>
+                 <div class="panel-body">
+                   <div id="weather-image">
+                    
+                   </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
